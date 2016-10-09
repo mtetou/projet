@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: MBNgGAiRFCitawt5Iiz7O4knQmQh9Baor85CTlviS7XThyBsvIRCEBNphKuyMC6sIW7dELqNzb/i2bF8LtB+ENgwv/qmN/fonTMtQ8I/GEEy+a63VJVKptytZOIFagQYDJpy3TpPBbBT5YEqAD0Dpr0OQzNGJ2VwJmr+rKVusejbbX78d+iV1+W1z+0o2YKA3x5oiXHgQqEkt238Ji15COXFDzE2rURR/tDbmdxUxSTg9C5Hc5Bwxl2t1oByPOCBLmUb0aVD/Ix5CbKCumkpgNR2bywvn1wPDEdU1Ir3mMwHcynSYCfaDU/94OEvliatHDTJ1+yh8GE1dFyefg93qEA0+JokG5cPMGKMif9tRmF7BJ/kkYb1F9/yZwmlfPQCPguXoYNq+YGnH0i+U/EsfCSVzS9+drW39WUl72pgEjR3uErh42G3NMNFnPRG09F9kGZSGB2QXyj+pRxdVo+D35I4ABMLbC7MYe6ZPIFLK1G7aT/rYW4arfjgX6/O6x8bM9SgtbiXvllwYwWzynnRFc0Atv4bW8KOb3Ro+ToDcIeCFGfkKEWju/7dXipOSpg03pYBDL7ywSJ+NVglEzfEBI+dDb7dBDGjuXE6txeXsgAa3QEGhqWJR37bJATXONHsvZNOyjItl1DEQ1tvlAxT7JNqeYDRjd0FwX+UmwIXrOM=
+  app: radiant-refuge-58204
+  on:
+    repo: mtetou/projet
