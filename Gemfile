@@ -29,6 +29,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+
 gem 'pg', '~> 0.18.4', group: :production
 
 # Use ActiveModel has_secure_password
@@ -43,3 +44,4 @@ gem 'pg', '~> 0.18.4', group: :production
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'nominatim', '~> 0.0.5'
