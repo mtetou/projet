@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @city.name %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @city.lat %>
+</p>
+
+<p>
+  <strong>Lon:</strong>
+  <%= @city.lon %>
+</p>
+
+<p>
+  <strong>Temperature:</strong>
+  <%=  @forecasts[:temperature] %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%=  @forecasts[:summary] %>
+</p>
+
+<p>
+  <strong>WindSpeed:</strong>
+  <%=  @forecasts[:windSpeed] %>
+</p>
+
+<%= link_to 'Edit', edit_city_path(@city) %> |
+<%= link_to 'Back', cities_path %>

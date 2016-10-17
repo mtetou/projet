@@ -45,3 +45,7 @@ gem 'pg', '~> 0.18.4', group: :production
 # gem 'debugger', group: [:development, :test]
 
 gem 'nominatim', '~> 0.0.5'
+
+gem 'forecast_io', '~> 2.0'
+
+gem 'typhoeus', '~> 1.1'
