@@ -14,8 +14,8 @@ angular.module('myApp.view1', ['ngRoute'])
   //$scope.students = [{name: "bob", surname: "dylan"}] 
   
       var student = $resource('/students/:id.json', {studentId:'@id'}) //Creation de la ressource
-  $scope.students = student.query() //Recuperation de la liste des donnees de maniere dynamique
-  	});
+      $scope.students = student.query() //Recuperation de la liste des donnees de maniere dynamique
+  	
 
 
 }]);
