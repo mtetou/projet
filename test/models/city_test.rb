@@ -1,14 +1,20 @@
 require 'test_helper'
 
 class CityTest < ActiveSupport::TestCase
-   test "invalid city" do
-     incorrect = City.new name: cities(:two).name
-     assert incorrect.invalid?
-   end
-  
-  test "valid city" do
-     incorrect = City.new name: cities(:one).name
-     assert incorrect.valid?
-   end
+ setup do 
+   @city = cities(:one)
+   @citywrong = cities(:two)
 end
+  
+  test "Should create city" do 
+    VCR.use_cassette("nominatim") do 
+      assert_difference('City.count') do
+      city = City.new  name: @city.name
+      city.save
+      end
+    end
+  end
+  
+end 
+  
 
