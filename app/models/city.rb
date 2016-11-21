@@ -1,6 +1,6 @@
 class City < ActiveRecord::Base
   
-   before_create :geocode
+   before_validation :geocode
   public
 
   def forecast_io
@@ -14,8 +14,10 @@ class City < ActiveRecord::Base
 
   def geocode
     places = Nominatim.search.city(self.name).limit(1)
-    self.lat = places.first.lat
-    self.lon = places.first.lon
+		if places.first
+      self.lat = places.first.lat
+      self.lon = places.first.lon
+		end
   end
   
 end
