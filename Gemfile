@@ -55,3 +55,8 @@ gem 'forecast_io', '~> 2.0'
 gem 'typhoeus', '~> 1.1'
 
 gem 'vcr', '~> 3.0', '>= 3.0.3'
+
+group :test do
+  gem "simplecov"
+  gem "codeclimate-test-reporter", "~> 1.0.0"
+end

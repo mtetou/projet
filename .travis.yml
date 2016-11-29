@@ -8,3 +8,11 @@ deploy:
   app: radiant-refuge-58204
   on:
     repo: mtetou/projet
+    
+addons:
+    code_climate:
+        repo_token: e797bb6064ab62774e50d05055c1ad6b3d45d201bd8b8f45e16b3ae12d9c2c5b
+
+
+after_success:
+  - bundle exec codeclimate-test-reporter
